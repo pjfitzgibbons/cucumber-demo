@@ -1,2 +1,4 @@
 # .svn anywhere in the tree
 .svn
+
+log/*.log

@@ -11,4 +11,14 @@ describe Product do
   it "should create a new instance given valid attributes" do
     Product.create!(@valid_attributes)
   end
+
+  it "should have comments" do
+    Product.new.comments.should == []
+  end
+
+  it "should retrieve related comments" do
+    tv = Product.create(:name => 'tv', :price => 1.0)
+    comment = Comment.create(:name => 'bob', :body => 'Great!', :product_id => tv.id)
+    tv.comments.should == [comment]
+  end
 end
