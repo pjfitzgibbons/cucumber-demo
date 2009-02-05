@@ -8,7 +8,7 @@ When /^I go to (.+)$/ do |page_name|
 end
 
 When /^I press "(.*)"$/ do |button|
-  click_button(button)
+    click_button(button)
 end
 
 When /^I follow "(.*)"$/ do |link|
@@ -87,10 +87,12 @@ When /^I attach the file at "(.*)" to "(.*)" $/ do |path, field|
 end
 
 Then /^I should see "(.*)"$/ do |text|
+  response.body
   response.body.should =~ /#{text}/m
 end
 
 Then /^I should not see "(.*)"$/ do |text|
+  response.body
   response.body.should_not =~ /#{text}/m
 end
 

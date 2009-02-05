@@ -7,7 +7,7 @@ def path_to(page_name)
   when /Product (\d+)/
     product_path(:id => $1)
   when /Product (\S+)/
-    product_path(:id => $1.hash.abs)
+    product_path(:id => Fixtures.identify($1))
     
   # Add more page name => path mappings here
   
