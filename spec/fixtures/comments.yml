@@ -1,9 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  body: MyText
+  name: Bob
+  body: Sounds Great!
+  product: one
 
 two:
-  name: MyString
-  body: MyText
+  name: Sue
+  body: Can't hear it
+  product: one

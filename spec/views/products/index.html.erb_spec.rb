@@ -19,7 +19,7 @@ describe "/products/index.html.erb" do
   it "should render list of products" do
     render "/products/index.html.erb"
     response.should have_tag("tr>td", "value for name".to_s, 2)
-    response.should have_tag("tr>td", 9.99.to_s, 2)
+    response.should have_tag("tr>td", "$9.99", 2)
   end
 end
 

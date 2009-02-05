@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
+  name: Television
   price: 9.99
 
 two:
-  name: MyString
+  name: Radio
   price: 9.99

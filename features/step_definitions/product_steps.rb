@@ -2,9 +2,9 @@ Given /I am on the new product page/ do
   visit "/products/new"
 end
 
-Given /^the following products:$/ do |products|
-  Product.create!(products.hashes)
-end
+#Given /^the following products:$/ do |products|
+#  Product.create!(products.hashes)
+#end
 
 When /^I delete the (\d+)(?:st|nd|rd|th) product$/ do |pos|
   visit products_url

@@ -3,7 +3,12 @@ def path_to(page_name)
   
   when /the homepage/i
     root_path
-  
+
+  when /Product (\d+)/
+    product_path(:id => $1)
+  when /Product (\S+)/
+    product_path(:id => $1.hash.abs)
+    
   # Add more page name => path mappings here
   
   else

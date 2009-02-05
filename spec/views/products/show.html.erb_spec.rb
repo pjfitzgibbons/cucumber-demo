@@ -21,6 +21,7 @@ describe "/products/show.html.erb" do
     response.should have_text(/2 comments/)
     response.should have_text(/Sue says/)
     response.should have_text(/Bob says/)
+#    response.should have_tag
   end
 end
 

@@ -9,7 +9,7 @@
 <% for product in @products %>
   <tr>
     <td><%=h product.name %></td>
-    <td><%=h product.price %></td>
+    <td><%=h number_to_currency(product.price) %></td>
     <td><%= link_to 'Show', product %></td>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>
     <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
