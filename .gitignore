@@ -2,3 +2,4 @@
 .svn
 
 log/*.log
+db/*.sqlite3
